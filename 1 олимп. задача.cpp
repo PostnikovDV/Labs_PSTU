@@ -6,15 +6,18 @@ int main()
 	setlocale(LC_ALL, "Russian");
 	cout << "Введите трехзначное число: ";
 	int a, b, c, x, t, d;
+	bool flag, flag1, flag2, flag3, flag4;
 	bool f = false;
 	cin >> x;
 	a = x % 10;
 	d = x / 10;
 	b = d % 10;
 	c = d / 10;
-	while (f == false)
+	flag = (x < 100 || x>999);
+	flag1 = (a == b || a == c || b == c);
+	while (!f)
 	{
-		if (x < 100 || x>999)
+		if (flag)
 		{
 			cout << "Введите трехзначное число еще раз: ";
 			cin >> x;
@@ -24,7 +27,7 @@ int main()
 			c = d / 10;
 
 		}
-		else if (a == b || a == c || b == c)
+		else if (flag1)
 		{
 			cout << "Введите трехзначное число еще раз: ";
 			cin >> x;
@@ -58,7 +61,10 @@ int main()
 	c = b;
 	b = t;
 	cout << c << b << a << endl;
-	if ((a > b) && (a > c))
+	flag2 = (a > b) && (a > c);
+	flag3 = (b > a) && (b > c);
+	flag4 = (c > a) && (c > b);
+	if (flag2)
 	{
 		if (b > c)
 			cout << "Самое большое число: " << a << b << c;
@@ -67,7 +73,7 @@ int main()
 	}
 	else
 	{
-		if ((b > a) && (b > c))
+		if (flag3)
 		{
 			if (a > c)
 				cout << "Самое большое число: " << b << a << c;
@@ -76,7 +82,7 @@ int main()
 		}
 		else
 		{
-			if ((c > a) && (c > b))
+			if (flag4)
 			{
 				if (a > b)
 					cout << "Самое большое число: " << c << a << b;
