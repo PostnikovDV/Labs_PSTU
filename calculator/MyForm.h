@@ -14,7 +14,7 @@ namespace calculator {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MyForm
+	/// РЎРІРѕРґРєР° РґР»СЏ MyForm
 	/// </summary>
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
@@ -23,13 +23,13 @@ namespace calculator {
 		{
 			InitializeComponent();
 			//
-			//TODO: добавьте код конструктора
+			//TODO: РґРѕР±Р°РІСЊС‚Рµ РєРѕРґ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Освободить все используемые ресурсы.
+		/// РћСЃРІРѕР±РѕРґРёС‚СЊ РІСЃРµ РёСЃРїРѕР»СЊР·СѓРµРјС‹Рµ СЂРµСЃСѓСЂСЃС‹.
 		/// </summary>
 		~MyForm()
 		{
@@ -82,14 +82,14 @@ namespace calculator {
 
 	private:
 		/// <summary>
-		/// Обязательная переменная конструктора.
+		/// РћР±СЏР·Р°С‚РµР»СЊРЅР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°.
 		/// </summary>
 		System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
+		/// РўСЂРµР±СѓРµРјС‹Р№ РјРµС‚РѕРґ РґР»СЏ РїРѕРґРґРµСЂР¶РєРё РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° вЂ” РЅРµ РёР·РјРµРЅСЏР№С‚Рµ 
+		/// СЃРѕРґРµСЂР¶РёРјРѕРµ СЌС‚РѕРіРѕ РјРµС‚РѕРґР° СЃ РїРѕРјРѕС‰СЊСЋ СЂРµРґР°РєС‚РѕСЂР° РєРѕРґР°.
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -126,7 +126,7 @@ namespace calculator {
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(96, 39);
 			this->button1->TabIndex = 6;
-			this->button1->Text = L"Решить";
+			this->button1->Text = L"Р РµС€РёС‚СЊ";
 			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			// 
@@ -140,7 +140,7 @@ namespace calculator {
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(41, 36);
 			this->button2->TabIndex = 7;
-			this->button2->Text = L"С";
+			this->button2->Text = L"РЎ";
 			this->button2->UseVisualStyleBackColor = false;
 			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
 			// 
@@ -382,7 +382,7 @@ namespace calculator {
 			this->textBox2->ReadOnly = true;
 			this->textBox2->Size = System::Drawing::Size(201, 22);
 			this->textBox2->TabIndex = 28;
-			this->textBox2->Text = L"Ответ";
+			this->textBox2->Text = L"РћС‚РІРµС‚";
 			this->textBox2->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox2_TextChanged);
 			// 
 			// button19
@@ -423,7 +423,7 @@ namespace calculator {
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(338, 22);
 			this->textBox1->TabIndex = 32;
-			this->textBox1->Text = L"Введите выражение";
+			this->textBox1->Text = L"Р’РІРµРґРёС‚Рµ РІС‹СЂР°Р¶РµРЅРёРµ";
 			this->textBox1->Click += gcnew System::EventHandler(this, &MyForm::textBox1_Click);
 			this->textBox1->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox1_TextChanged_1);
 			// 
@@ -460,7 +460,7 @@ namespace calculator {
 			this->MaximumSize = System::Drawing::Size(570, 407);
 			this->MinimumSize = System::Drawing::Size(570, 407);
 			this->Name = L"MyForm";
-			this->Text = L"Калькулятор";
+			this->Text = L"РљР°Р»СЊРєСѓР»СЏС‚РѕСЂ";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
@@ -472,34 +472,34 @@ namespace calculator {
 	private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {
-		if (textBox1->Text == "Введите выражение")
+		if (textBox1->Text == "Р’РІРµРґРёС‚Рµ РІС‹СЂР°Р¶РµРЅРёРµ")
 			textBox1->Text = "";
 		textBox1->Text = textBox1->Text + Convert::ToString("7");
 	}
 private: System::Void button13_Click(System::Object^ sender, System::EventArgs^ e) {
-	if (textBox1->Text == "Введите выражение")
+	if (textBox1->Text == "Р’РІРµРґРёС‚Рµ РІС‹СЂР°Р¶РµРЅРёРµ")
 		textBox1->Text = "";
 	textBox1->Text = textBox1->Text + Convert::ToString("8");
 }
 private: System::Void button12_Click(System::Object^ sender, System::EventArgs^ e) {
-	if (textBox1->Text == "Введите выражение")
+	if (textBox1->Text == "Р’РІРµРґРёС‚Рµ РІС‹СЂР°Р¶РµРЅРёРµ")
 		textBox1->Text = "";
 	textBox1->Text = textBox1->Text + Convert::ToString("9");
 }
 private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
-	if (textBox1->Text == "Введите выражение")
+	if (textBox1->Text == "Р’РІРµРґРёС‚Рµ РІС‹СЂР°Р¶РµРЅРёРµ")
 		textBox1->Text = "";
 	textBox1->Text = textBox1->Text + Convert::ToString("*");
 }
 private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void button18_Click(System::Object^ sender, System::EventArgs^ e) {
-	if (textBox1->Text == "Введите выражение")
+	if (textBox1->Text == "Р’РІРµРґРёС‚Рµ РІС‹СЂР°Р¶РµРЅРёРµ")
 		textBox1->Text = "";
 	textBox1->Text = textBox1->Text + Convert::ToString("(");
 }
 private: System::Void button17_Click(System::Object^ sender, System::EventArgs^ e) {
-	if (textBox1->Text == "Введите выражение")
+	if (textBox1->Text == "Р’РІРµРґРёС‚Рµ РІС‹СЂР°Р¶РµРЅРёРµ")
 		textBox1->Text = "";
 	textBox1->Text = textBox1->Text + Convert::ToString(")");
 }
@@ -507,9 +507,9 @@ private: System::Void button19_Click(System::Object^ sender, System::EventArgs^ 
 }
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 	
-	if (textBox1->Text == "" || textBox1->Text == "Введите выражение")
+	if (textBox1->Text == "" || textBox1->Text == "Р’РІРµРґРёС‚Рµ РІС‹СЂР°Р¶РµРЅРёРµ")
 	{
-		MessageBox::Show("Вы ничего не ввели!");
+		MessageBox::Show("Р’С‹ РЅРёС‡РµРіРѕ РЅРµ РІРІРµР»Рё!");
 		return;
 	}
 	std::string s,type;
@@ -532,7 +532,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 		{
 			textBox1->Text == "";
 			textBox2->Text == "";
-			MessageBox::Show("Некорректный ввод скобок!");
+			MessageBox::Show("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ СЃРєРѕР±РѕРє!");
 			
 			return;
 		}
@@ -555,7 +555,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 				{
 					textBox1->Text == "";
 					textBox2->Text == "";
-					MessageBox::Show("Некорректный ввод!");
+					MessageBox::Show("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ!");
 					
 					return;
 				}
@@ -583,7 +583,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 				{
 					textBox1->Text == "";
 					textBox2->Text == "";
-					MessageBox::Show("Некорректный ввод!");
+					MessageBox::Show("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ!");
 					return;
 				}
 			}
@@ -597,7 +597,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 					{
 						textBox1->Text == "";
 						textBox2->Text == "";
-						MessageBox::Show("На ноль делить нельзя!");
+						MessageBox::Show("РќР° РЅРѕР»СЊ РґРµР»РёС‚СЊ РЅРµР»СЊР·СЏ!");
 						
 					}
 
@@ -605,7 +605,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 					{
 						textBox1->Text == "";
 						textBox2->Text == "";
-						MessageBox::Show("Некорректный ввод!");
+						MessageBox::Show("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ!");
 						
 					}
 
@@ -617,7 +617,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 					 {
 						 textBox1->Text == "";
 						 textBox2->Text == "";
-						 MessageBox::Show("На ноль делить нельзя!");
+						 MessageBox::Show("РќР° РЅРѕР»СЊ РґРµР»РёС‚СЊ РЅРµР»СЊР·СЏ!");
 
 					 }
 					 else
@@ -650,7 +650,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 				 {
 					 textBox1->Text = "";
 					 textBox2->Text == "";
-					 MessageBox::Show("Некорректный ввод!");
+					 MessageBox::Show("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ!");
 					 return;
 				 }
 
@@ -670,7 +670,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 				{
 						textBox1->Text = "";
 						textBox2->Text == "";
-						MessageBox::Show("Некорректный ввод!");
+						MessageBox::Show("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ!");
 						return;
 				}
 
@@ -698,7 +698,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 				{
 						textBox1->Text = "";
 						textBox2->Text == "";
-						MessageBox::Show("Некорректный ввод!");
+						MessageBox::Show("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ!");
 						return;
 				}
 			}
@@ -729,7 +729,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 							{
 								textBox1->Text == "";
 								textBox2->Text == "";
-								MessageBox::Show("Некорректный ввод!");
+								MessageBox::Show("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ!");
 								return;
 							}
 							int j = i + 2;
@@ -739,7 +739,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 								{
 									textBox1->Text == "";
 									textBox2->Text == "";
-									MessageBox::Show("Некорректный ввод!");
+									MessageBox::Show("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ!");
 									return;
 								}
 								j++;
@@ -750,7 +750,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 						{
 							textBox1->Text == "";
 							textBox2->Text == "";
-							MessageBox::Show("Используйте точки!");
+							MessageBox::Show("РСЃРїРѕР»СЊР·СѓР№С‚Рµ С‚РѕС‡РєРё!");
 							return;
 						}
 						tmp1 += s[i + 1];
@@ -789,7 +789,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 					{
 						textBox1->Text == "";
 						textBox2->Text == "";
-						MessageBox::Show("Некорректный ввод!");
+						MessageBox::Show("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ!");
 						return;
 					}
 				}
@@ -801,7 +801,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 				{
 					textBox1->Text == "";
 					textBox2->Text == "";
-					MessageBox::Show("Некорректный ввод!");
+					MessageBox::Show("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ!");
 					return;
 				}
 					st.push(s[i]);
@@ -813,7 +813,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 				{
 					textBox1->Text == "";
 					textBox2->Text == "";
-					MessageBox::Show("Некорректный ввод!");
+					MessageBox::Show("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ!");
 					return;
 				}
 
@@ -840,7 +840,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 							{
 								textBox1->Text == "";
 								textBox2->Text == "";
-								MessageBox::Show("Некорректный ввод!");
+								MessageBox::Show("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ!");
 								return;
 							}
 							int j = i+1;
@@ -850,7 +850,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 								{
 									textBox1->Text == "";
 									textBox2->Text == "";
-									MessageBox::Show("Некорректный ввод!");
+									MessageBox::Show("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ!");
 									return;
 								}
 								j++;
@@ -861,7 +861,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 						{
 							textBox1->Text == "";
 							textBox2->Text == "";
-							MessageBox::Show("Используйте точки!");
+							MessageBox::Show("РСЃРїРѕР»СЊР·СѓР№С‚Рµ С‚РѕС‡РєРё!");
 							return;
 						}
 						a += s[i];
@@ -876,7 +876,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
             {
 			textBox1->Text == "";
 			textBox2->Text == "";
-					MessageBox::Show("Некорректный ввод!");
+					MessageBox::Show("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ!");
 
 					return;
 			}
@@ -892,68 +892,68 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 	textBox1->ForeColor = System::Drawing::Color::Gray;
 	textBox2->Text = "";
 	textBox1->Text = "";
-	textBox1->Text = "Введите выражение";
-	textBox2->Text = "Ответ";
+	textBox1->Text = "Р’РІРµРґРёС‚Рµ РІС‹СЂР°Р¶РµРЅРёРµ";
+	textBox2->Text = "РћС‚РІРµС‚";
 }
 private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
-	if (textBox1->Text == "Введите выражение")
+	if (textBox1->Text == "Р’РІРµРґРёС‚Рµ РІС‹СЂР°Р¶РµРЅРёРµ")
 		textBox1->Text = "";
 	textBox1->Text = textBox1->Text + Convert::ToString("+");
 }
 private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
-	if (textBox1->Text == "Введите выражение")
+	if (textBox1->Text == "Р’РІРµРґРёС‚Рµ РІС‹СЂР°Р¶РµРЅРёРµ")
 		textBox1->Text = "";
 	textBox1->Text = textBox1->Text + Convert::ToString("-");
 }
 private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
-	if (textBox1->Text == "Введите выражение")
+	if (textBox1->Text == "Р’РІРµРґРёС‚Рµ РІС‹СЂР°Р¶РµРЅРёРµ")
 		textBox1->Text = "";
 	textBox1->Text = textBox1->Text + Convert::ToString("/");
 }
 private: System::Void button11_Click(System::Object^ sender, System::EventArgs^ e) {
-	if (textBox1->Text == "Введите выражение")
+	if (textBox1->Text == "Р’РІРµРґРёС‚Рµ РІС‹СЂР°Р¶РµРЅРёРµ")
 		textBox1->Text = "";
 	textBox1->Text = textBox1->Text + Convert::ToString("4");
 }
 private: System::Void button14_Click(System::Object^ sender, System::EventArgs^ e) {
-	if (textBox1->Text == "Введите выражение")
+	if (textBox1->Text == "Р’РІРµРґРёС‚Рµ РІС‹СЂР°Р¶РµРЅРёРµ")
 		textBox1->Text = "";
 	textBox1->Text = textBox1->Text + Convert::ToString("5");
 }
 private: System::Void button9_Click(System::Object^ sender, System::EventArgs^ e) {
-	if (textBox1->Text == "Введите выражение")
+	if (textBox1->Text == "Р’РІРµРґРёС‚Рµ РІС‹СЂР°Р¶РµРЅРёРµ")
 		textBox1->Text = "";
 	textBox1->Text = textBox1->Text + Convert::ToString("6");
 }
 private: System::Void button8_Click(System::Object^ sender, System::EventArgs^ e) {
-	if (textBox1->Text == "Введите выражение")
+	if (textBox1->Text == "Р’РІРµРґРёС‚Рµ РІС‹СЂР°Р¶РµРЅРёРµ")
 		textBox1->Text = "";
 	textBox1->Text = textBox1->Text + Convert::ToString("1");
 }
 private: System::Void button10_Click(System::Object^ sender, System::EventArgs^ e) {
-	if (textBox1->Text == "Введите выражение")
+	if (textBox1->Text == "Р’РІРµРґРёС‚Рµ РІС‹СЂР°Р¶РµРЅРёРµ")
 		textBox1->Text = "";
 	textBox1->Text = textBox1->Text + Convert::ToString("2");
 }
 private: System::Void button15_Click(System::Object^ sender, System::EventArgs^ e) {
-	if (textBox1->Text == "Введите выражение")
+	if (textBox1->Text == "Р’РІРµРґРёС‚Рµ РІС‹СЂР°Р¶РµРЅРёРµ")
 		textBox1->Text = "";
 	textBox1->Text = textBox1->Text + Convert::ToString("3");
 }
 private: System::Void button16_Click(System::Object^ sender, System::EventArgs^ e) {
-	if (textBox1->Text == "Введите выражение")
+	if (textBox1->Text == "Р’РІРµРґРёС‚Рµ РІС‹СЂР°Р¶РµРЅРёРµ")
 		textBox1->Text = "";
 	textBox1->Text = textBox1->Text + Convert::ToString("0");
 }
 private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-	if (textBox1->Text == "Введите выражение")
+	if (textBox1->Text == "Р’РІРµРґРёС‚Рµ РІС‹СЂР°Р¶РµРЅРёРµ")
 		textBox1->Text = "";
 	textBox1->ForeColor = System::Drawing::Color::Black;
 }
 private: System::Void textBox1_Click(System::Object^ sender, System::EventArgs^ e) {
-	if(textBox1->Text=="Введите выражение")
+	if(textBox1->Text=="Р’РІРµРґРёС‚Рµ РІС‹СЂР°Р¶РµРЅРёРµ")
 	textBox1->Text = "";
 	textBox1->ForeColor = System::Drawing::Color::Black;
 }
@@ -970,14 +970,15 @@ private: System::Void button20_Click(System::Object^ sender, System::EventArgs^ 
 	
 } 
 private: System::Void textBox1_TextChanged_1(System::Object^ sender, System::EventArgs^ e) {
-	/*if (textBox1->Text == "Введите выражение")
+	/*if (textBox1->Text == "Р’РІРµРґРёС‚Рµ РІС‹СЂР°Р¶РµРЅРёРµ")
 		textBox1->Text = "";*/
 	textBox1->ForeColor = System::Drawing::Color::Black;
 }
 private: System::Void button19_Click_1(System::Object^ sender, System::EventArgs^ e) {
-	if (textBox1->Text == "Введите выражение")
+	if (textBox1->Text == "Р’РІРµРґРёС‚Рµ РІС‹СЂР°Р¶РµРЅРёРµ")
 		textBox1->Text = "";
 	textBox1->Text = textBox1->Text + Convert::ToString(".");
 }
 };
 }
+
